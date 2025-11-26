@@ -1,5 +1,4 @@
-/**
- * Forecasts total spending for the current month using daily linear regression.
+ /* Forecasts total spending for the current month using daily linear regression.
  * Only uses data from the current month.
  */
 export function getDailyExpenseForecastForCurrentMonth(expenses: { date: Date; amount: number }[], now: Date = new Date()) {

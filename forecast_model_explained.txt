@@ -1,0 +1,36 @@
+# How the Monthly Expense Forecast Model Works (Layman Terms)
+
+Our app predicts your future monthly spending using simple, easy-to-understand methods. Here’s how it works:
+
+## 1. If You Have Only 1 Month of Data
+- The app uses your total spending from last month as the prediction for next month.
+- Example: If you spent $1,000 last month, it predicts you’ll spend $1,000 next month.
+
+## 2. If You Have 2 or 3 Months of Data
+- The app calculates the average and the middle value (median) of your last few months.
+- It then averages those two numbers for a balanced prediction.
+- Example: If you spent $900, $1,000, and $1,200 in the last three months:
+  - Average = ($900 + $1,000 + $1,200) / 3 = $1,033
+  - Median = $1,000
+  - Prediction = ($1,033 + $1,000) / 2 = $1,016.50
+
+## 3. If You Have 4 or More Months of Data
+- The app uses three methods and averages them:
+  1. **Trend Line (Regression):** Looks for an upward or downward pattern in your spending.
+  2. **Moving Average:** Averages your last three months.
+  3. **Median:** Finds the middle value of all your months.
+- The final prediction is the average of these three numbers.
+
+## Why This Works
+- These methods are simple, reliable, and don’t need a lot of data.
+- They help smooth out unusual months and give a fair estimate, even if you’re new to tracking expenses.
+
+## What If You Have Very Little Data?
+- The app always gives you a prediction, even if you only have one month of spending history.
+- As you add more months, the prediction gets smarter and more accurate.
+
+---
+
+**In short:**
+- The app uses your past spending to guess your future spending, using simple math and patterns anyone can understand.
+- No complicated AI—just smart, practical forecasting!
